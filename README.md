@@ -3,13 +3,13 @@ This project demonstrates an end-to-end cloud-based data engineering and analyti
 
 The pipeline ingests raw Spotify datasets into Amazon S3, processes and transforms the data using AWS Glue, catalogs the datasets using the AWS Glue Data Catalog, and performs serverless SQL analysis using Amazon Athena. The resulting insights are presented through interactive Amazon QuickSight dashboards.
 
-# Architecture
+## Architecture
 
 Spotify Dataset → Amazon S3 → AWS Glue → S3 Processed Data → Glue Data Catalog → Amazon Athena → Amazon QuickSight
 
 Architecture Flow
 
-1.Data Ingestion
+### 1.Data Ingestion
 
 Collected Spotify datasets containing information about tracks, artists, albums, genres, popularity, and other attributes.
 
