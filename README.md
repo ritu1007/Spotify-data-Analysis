@@ -9,13 +9,13 @@ Spotify Dataset → Amazon S3 → AWS Glue → S3 Processed Data → Glue Data C
 
 Architecture Flow
 
-### 1.Data Ingestion
+#### 1.Data Ingestion
 
 Collected Spotify datasets containing information about tracks, artists, albums, genres, popularity, and other attributes.
 
 Uploaded raw datasets into Amazon S3.
 
-2.Data Processing
+#### 2.Data Processing
 
 Used AWS Glue to create ETL jobs for processing the raw data.
 
@@ -23,19 +23,19 @@ Performed data cleansing, transformation, standardization, and handling of missi
 
 Generated curated datasets for downstream analysis.
 
-3.Data Cataloging
+#### 3.Data Cataloging
 
 Used AWS Glue Crawlers to automatically discover the schema of datasets stored in S3.
 
 Created tables in the AWS Glue Data Catalog.
 
-4.Data Analysis
+#### 4.Data Analysis
 
 Used Amazon Athena to query the curated datasets directly from S3 using SQL.
 
 Performed aggregations and analytical queries to identify trends and patterns in Spotify data.
 
-5.Visualization
+#### 5.Visualization
 
 Connected Amazon QuickSight with the analytical dataset.
 
